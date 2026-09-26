@@ -1,0 +1,82 @@
+/* General Styles */
+
+:root {
+    --text-color: #0b0d0e;
+    --background-color: #D6EFFF;
+    --darker-background-color: #A4C8E1;
+    --header-background-color: #287f89;
+    --footer-background-color: #0c2326;
+    --hover-color: aqua;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: var(--header-background-color);
+    padding: 15px;
+}
+
+header h1 { 
+    margin: 0;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 400; /* normal is 400 */
+}
+
+nav a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+/* Main Content */
+main section:nth-child(even) {
+    background-color: var(--darker-background-color);
+}
+
+.section-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*Welcome*/
+
+#welcome img {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*employees(teachers)*/
+#employees {
+    clear: both;
+}
+
+#employees img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*footer*/
+footer {
+    background-color: var(--footer-background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
